@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Horários, contatos e formulário da Reespawn Lobby.">
+  <title>Contato e localização | Reespawn Lobby</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-line" id="inicio"></div>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Reespawn Lobby - início">
+      <img class="brand-logo" src="assets/logo-icon.svg" alt="">
+      <span class="brand-name">REESPAWN <b>LOBBY</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="experiencias.html">Experiências</a><a href="cardapio.html">Cardápio</a><a href="precos.html">Preços</a><a href="sobre.html">Sobre nós</a>
+      <a class="nav-cta active" aria-current="page" href="contato.html">Encontre a gente <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section contact-page">
+      <div class="section-heading">
+        <div><div class="eyebrow">PRÓXIMA MISSÃO: NOS VISITAR</div><h2>SEU LUGAR<br>É <span>AQUI.</span></h2></div>
+        <p>Quer conhecer o espaço, reservar ou tirar dúvidas? Fale com a gente.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-col">
+          <div class="contact-line"><span>ENDEREÇO</span><b id="infoEndereco"></b></div>
+          <div id="infoHorarios"></div>
+          <div class="contact-line"><span>WHATSAPP</span><b id="infoWhats"></b></div>
+          <div class="contact-line"><span>INSTAGRAM</span><b id="infoInsta"></b></div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#" data-wa="Olá! Vim pelo site da Reespawn Lobby.">CHAMAR NO WHATSAPP <span>↗</span></a>
+            <a class="button button-ghost" href="#" data-ig>INSTAGRAM <span>↗</span></a>
+          </div>
+        </div>
+        <div class="contact-visit-card">
+          <div class="visit-mark">PLAYER 1 <span>READY</span></div>
+          <h3>SEU PRÓXIMO<br><span>ENCONTRO É AQUI.</span></h3>
+          <p>Chame sua equipe, escolha seu jogo e venha aproveitar. O Reespawn Lobby é o ponto de encontro de quem gosta de jogar, comer e se divertir.</p>
+          <div class="visit-note"><span>LOCALIZAÇÃO DO PROJETO</span><b>PARACATU — MG</b></div>
+          <div class="visit-note"><span>CONTATOS</span><b>ILUSTRATIVOS PARA O PROJETO</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section form-section" id="formulario">
+      <div class="section-heading">
+        <div><div class="eyebrow">MANDE UMA MENSAGEM</div><h2>FALE COM<br><span>A GENTE.</span></h2></div>
+        <p>Para dúvidas, reservas ou parcerias. Respondemos o quanto antes.</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>NOME<input name="nome" required autocomplete="name"></label>
+        <label>TELEFONE / WHATSAPP<input name="telefone" type="tel" required autocomplete="tel"></label>
+        <label>ASSUNTO<select name="assunto"><option value="duvida">Dúvida</option><option value="reserva">Reserva</option><option value="outro">Outro assunto</option></select></label>
+        <label class="only-reserva" hidden>DATA<input name="data" type="date"></label>
+        <label class="only-reserva" hidden>HORÁRIO<input name="hora" type="time"></label>
+        <label class="only-reserva" hidden>PESSOAS<input name="pessoas" type="number" min="1" max="30"></label>
+        <label class="full">MENSAGEM<textarea name="mensagem" rows="5" required></textarea></label>
+        <div class="full form-actions"><button class="button button-primary" type="submit">ENVIAR MENSAGEM <span>↗</span></button><p class="form-status" id="formStatus" role="status"></p></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-icon.svg" alt=""><span class="brand-name">REESPAWN <b>LOBBY</b></span></a>
+    <p>FEITO PARA QUEM AMA JOGAR. © <span id="year"></span> REESPAWN LOBBY.</p>
+    <a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a>
+  </footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

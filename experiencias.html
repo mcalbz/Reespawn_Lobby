@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PCs, consoles e jogos de mesa na Reespawn Lobby.">
+  <title>Experiências | Reespawn Lobby</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-line" id="inicio"></div>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Reespawn Lobby - início">
+      <img class="brand-logo" src="assets/logo-icon.svg" alt="">
+      <span class="brand-name">REESPAWN <b>LOBBY</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="experiencias.html" class="active" aria-current="page">Experiências</a><a href="cardapio.html">Cardápio</a><a href="precos.html">Preços</a><a href="sobre.html">Sobre nós</a>
+      <a class="nav-cta" href="contato.html">Encontre a gente <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section experiences" id="experiencias">
+      <div class="section-heading">
+        <div><div class="eyebrow">ESCOLHA SUA FASE</div><h2>MAIS QUE UM<br><span>LUGAR PRA JOGAR.</span></h2></div>
+        <p>Vem passar uma hora ou ficar a tarde toda. Aqui sempre tem alguma coisa pra fazer.</p>
+      </div>
+      <p class="exp-intro">Na Reespawn Lobby, cada visita é uma nova aventura. Imagine reunir os amigos para jogar seus games favoritos em PCs e consoles, disputar partidas emocionantes, explorar jogos de tabuleiro e ainda aproveitar lanches e pratos inspirados no universo geek. Tudo isso em um só lugar, com um ambiente imersivo, cheio de referências e feito para quem ama games tanto quanto você. Seja para competir, relaxar ou passar horas se divertindo com a galera, aqui sempre tem espaço para mais um jogador.</p>
+      <div class="experience-grid">
+        <article class="experience-card exp-pc">
+          <div class="exp-number">01 / PLAY</div><div class="exp-symbol"><img src="assets/pc.svg" alt="Computador gamer"></div>
+          <h3>PCs & SETUPS</h3><p>Chame a party, escolha seu jogo e aproveite nossos computadores por hora.</p>
+          <a href="precos.html" class="text-link">VER VALORES <span>↗</span></a>
+        </article>
+        <article class="experience-card exp-console">
+          <div class="exp-number">02 / PLAYER 2</div><div class="exp-symbol"><img src="assets/console.svg" alt="Controle de console"></div>
+          <h3>CONSOLES</h3><p>Partidas casuais, disputas entre amigos e aquele clássico que nunca enjoa.</p>
+          <a href="precos.html" class="text-link">VER VALORES <span>↗</span></a>
+        </article>
+        <article class="experience-card exp-table">
+          <div class="exp-number">03 / PARTY</div><div class="exp-symbol"><img src="assets/board.svg" alt="Jogos de mesa"></div>
+          <h3>JOGOS DE MESA</h3><p>Estratégia, blefe, dados e histórias para criar em volta da mesa.</p>
+          <a href="precos.html" class="text-link">VER VALORES <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-icon.svg" alt=""><span class="brand-name">REESPAWN <b>LOBBY</b></span></a>
+    <p>FEITO PARA QUEM AMA JOGAR. © <span id="year"></span> REESPAWN LOBBY.</p>
+    <a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a>
+  </footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

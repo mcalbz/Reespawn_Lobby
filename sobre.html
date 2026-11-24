@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A história e a comunidade da Reespawn Lobby.">
+  <title>Sobre nós | Reespawn Lobby</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-line" id="inicio"></div>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Reespawn Lobby - início">
+      <img class="brand-logo" src="assets/logo-icon.svg" alt="">
+      <span class="brand-name">REESPAWN <b>LOBBY</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="experiencias.html">Experiências</a><a href="cardapio.html">Cardápio</a><a href="precos.html">Preços</a><a href="sobre.html" class="active" aria-current="page">Sobre nós</a>
+      <a class="nav-cta" href="contato.html">Encontre a gente <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="community" id="sobre">
+      <div class="community-mark"><img src="assets/logo-icon.svg" alt="Logo Reespawn Lobby"></div>
+      <div class="community-copy">
+        <div class="eyebrow">NÃO É SÓ SOBRE GANHAR</div>
+        <h2>É SOBRE A<br><span>PARTY TODA.</span></h2>
+        <p>A Reespawn Lobby nasceu da ideia de reunir o que a gente ama: jogos, comida, cultura geek e bons momentos com amigos. Um espaço para conhecer pessoas, descobrir novos jogos e fazer cada visita virar uma boa história.</p>
+        <a href="contato.html" class="text-link">VEM CONHECER <span>↗</span></a>
+      </div>
+      <div class="community-stats">
+        <div><strong>01</strong><span>UMA SÓ COMUNIDADE</span></div>
+        <div><strong>∞</strong><span>POSSIBILIDADES DE JOGO</span></div>
+        <div><strong>GG</strong><span>BOAS MEMÓRIAS</span></div>
+      </div>
+    </section>
+    <section class="team-section" id="equipe">
+      <div class="section-heading">
+        <div><div class="eyebrow">A PARTY POR TRÁS DO LOBBY</div><h2>CONHEÇA A<br><span>EQUIPE.</span></h2></div>
+        <p>Todo grande projeto começa com uma ideia, e a Reespawn Lobby nasceu da vontade de unir o universo gamer, a gastronomia e a diversão em um só lugar.</p>
+      </div>
+      <p class="about-text">Somos uma equipe de quatro pessoas que compartilham o objetivo de criar um espaço diferente, onde os jogos vão além das telas e se tornam uma oportunidade de fazer amizades, compartilhar experiências e criar boas memórias. Cada integrante contribui com suas ideias e habilidades para transformar esse projeto em realidade.</p>
+      <div class="team-grid" style="margin-top:34px">
+        <article class="team-card">
+          <div class="team-photo"><img src="assets/equipe/equipe-1.jpg" alt="Foto do colaborador 1" loading="lazy"></div>
+          <div class="team-info"><b>NOME AQUI</b><span>FUNÇÃO / APELIDO</span></div>
+        </article>
+        <article class="team-card">
+          <div class="team-photo"><img src="assets/equipe/equipe-2.jpg" alt="Foto do colaborador 2" loading="lazy"></div>
+          <div class="team-info"><b>NOME AQUI</b><span>FUNÇÃO / APELIDO</span></div>
+        </article>
+        <article class="team-card">
+          <div class="team-photo"><img src="assets/equipe/equipe-3.jpg" alt="Foto do colaborador 3" loading="lazy"></div>
+          <div class="team-info"><b>NOME AQUI</b><span>FUNÇÃO / APELIDO</span></div>
+        </article>
+        <article class="team-card">
+          <div class="team-photo"><img src="assets/equipe/equipe-4.jpg" alt="Foto do colaborador 4" loading="lazy"></div>
+          <div class="team-info"><b>NOME AQUI</b><span>FUNÇÃO / APELIDO</span></div>
+        </article>
+      </div>
+      <p class="team-closing">Somos a equipe por trás do lobby.<br><span>Agora, queremos você nessa partida!</span></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-icon.svg" alt=""><span class="brand-name">REESPAWN <b>LOBBY</b></span></a>
+    <p>FEITO PARA QUEM AMA JOGAR. © <span id="year"></span> REESPAWN LOBBY.</p>
+    <a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a>
+  </footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

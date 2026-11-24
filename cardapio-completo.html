@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Combos, lanches, drinks e sobremesas da Reespawn Lobby, com ingredientes e alérgenos.">
+  <title>Cardápio completo | Reespawn Lobby</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-line" id="inicio"></div>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Reespawn Lobby - início">
+      <img class="brand-logo" src="assets/logo-icon.svg" alt="">
+      <span class="brand-name">REESPAWN <b>LOBBY</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="experiencias.html">Experiências</a><a href="cardapio.html" class="active" aria-current="page">Cardápio</a><a href="precos.html">Preços</a><a href="sobre.html">Sobre nós</a>
+      <a class="nav-cta" href="contato.html">Encontre a gente <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section menu-page">
+      <div class="section-heading">
+        <div><div class="eyebrow">RECARGA DE ENERGIA</div><h2>ESCOLHA SEU<br><span>PRATO.</span></h2></div>
+        <p>Lanches, combos, drinks e sobremesas. Use os filtros para achar o que combina com você.</p>
+      </div>
+      <div class="menu-controls">
+        <div class="price-tabs" role="tablist" aria-label="Categorias do cardápio">
+          <button class="price-tab menu-tab active" data-category="todos" role="tab" aria-selected="true">TUDO</button>
+          <button class="price-tab menu-tab" data-category="lanches" role="tab" aria-selected="false">LANCHES</button>
+          <button class="price-tab menu-tab" data-category="combos" role="tab" aria-selected="false">COMBOS</button>
+          <button class="price-tab menu-tab" data-category="drinks" role="tab" aria-selected="false">DRINKS</button>
+          <button class="price-tab menu-tab" data-category="sobremesas" role="tab" aria-selected="false">SOBREMESAS</button>
+          <button class="price-tab menu-tab" data-category="alcoolicos" role="tab" aria-selected="false">DRINKS +18</button>
+        </div>
+        <div class="diet-filters" aria-label="Filtros de restrição alimentar"><span>FILTRAR:</span>
+          <button class="diet-chip" data-diet="vegetariano" aria-pressed="false">VEGETARIANO</button>
+        </div>
+      </div>
+      <div id="menuWrap" aria-live="polite"></div>
+      <div class="allergen-note">Itens e preços podem sofrer alterações sem aviso prévio.</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-icon.svg" alt=""><span class="brand-name">REESPAWN <b>LOBBY</b></span></a>
+    <p>FEITO PARA QUEM AMA JOGAR. © <span id="year"></span> REESPAWN LOBBY.</p>
+    <a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a>
+  </footer>
+  <script src="cardapio.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reespawn Lobby — jogue, coma e conecte-se. Um ponto de encontro para gamers e geeks.">
+  <title>Reespawn Lobby | Jogue. Coma. Conecte-se.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-line" id="inicio"></div>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Reespawn Lobby - início">
+      <img class="brand-logo" src="assets/logo-icon.svg" alt="">
+      <span class="brand-name">REESPAWN <b>LOBBY</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="experiencias.html">Experiências</a><a href="cardapio.html">Cardápio</a><a href="precos.html">Preços</a><a href="sobre.html">Sobre nós</a>
+      <a class="nav-cta" href="contato.html">Encontre a gente <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+<section class="hero" id="inicio">
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="status-dot"></span> SEU PRÓXIMO PONTO DE ENCONTRO</div>
+        <h1>PAUSE A ROTINA.<br><span>ENTRE NO JOGO.</span></h1>
+        <p>Uma mistura de games, comida boa e gente que curte as mesmas coisas que você. Chegou sua vez de dar respawn.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="experiencias.html">EXPLORE O LOBBY <span>↘</span></a>
+          <a class="button button-ghost" href="cardapio.html">VER CARDÁPIO</a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✦</span> JOGUE. COMA. CONECTE-SE.</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração decorativa gamer">
+        <div class="art-ring ring-one"></div>
+        <div class="art-ring ring-two"></div>
+        <div class="art-card card-back">PLAYER<br><strong>02</strong></div>
+        <div class="art-card card-front">
+          <div class="card-top"><span>RL / 001</span><span class="live">● LIVE</span></div>
+          <div class="controller"><img src="assets/logo-icon.svg" alt="Logo Reespawn Lobby"></div>
+          <div class="card-title">PLAYER<br><span>ONE</span></div>
+          <div class="card-bottom"><span>PRESS START</span><span>↗</span></div>
+        </div>
+        <div class="pixel pixel-one"></div><div class="pixel pixel-two"></div>
+        <div class="floating-tag">LEVEL UP <span>▲</span></div>
+      </div>
+      <div class="hero-bottom"><span>01 / UM NOVO TIPO DE LOBBY</span><span>SCROLL PARA EXPLORAR ↓</span></div>
+    </section>
+<section class="ticker" aria-label="O que oferecemos">
+      <div>GAMES <span>✳</span> COMIDA <span>✳</span> COMUNIDADE <span>✳</span> TABULEIROS <span>✳</span> GAMES <span>✳</span> COMIDA <span>✳</span> COMUNIDADE <span>✳</span></div>
+    </section>
+    <section class="section explore">
+      <div class="section-heading">
+        <div><div class="eyebrow">ESCOLHA SUA FASE</div><h2>POR ONDE<br><span>COMEÇAR?</span></h2></div>
+        <p>Cada canto do lobby tem a sua própria página. Escolha uma fase e entre.</p>
+      </div>
+      <div class="explore-grid">
+        <a class="experience-card" href="experiencias.html"><div class="exp-number">01 / PLAY</div><div class="exp-symbol"><img src="assets/pc.svg" alt=""></div><h3>EXPERIÊNCIAS</h3><p>PCs, consoles e jogos de mesa para jogar com a party.</p><span class="text-link">EXPLORAR <span>↗</span></span></a>
+        <a class="experience-card" href="cardapio.html"><div class="exp-number">02 / FUEL</div><div class="exp-symbol"><img src="assets/food.svg" alt=""></div><h3>CARDÁPIO</h3><p>Lanches, combos e bebidas para recarregar a energia.</p><span class="text-link">EXPLORAR <span>↗</span></span></a>
+        <a class="experience-card" href="precos.html"><div class="exp-number">03 / LOADOUT</div><div class="exp-symbol"><img src="assets/console.svg" alt=""></div><h3>PREÇOS</h3><p>Valores de games, tabuleiros e comida em um só lugar.</p><span class="text-link">EXPLORAR <span>↗</span></span></a>
+        <a class="experience-card" href="sobre.html"><div class="exp-number">04 / PARTY</div><div class="exp-symbol"><img src="assets/board.svg" alt=""></div><h3>SOBRE NÓS</h3><p>A história e a comunidade por trás da Reespawn Lobby.</p><span class="text-link">EXPLORAR <span>↗</span></span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-icon.svg" alt=""><span class="brand-name">REESPAWN <b>LOBBY</b></span></a>
+    <p>FEITO PARA QUEM AMA JOGAR. © <span id="year"></span> REESPAWN LOBBY.</p>
+    <a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a>
+  </footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comida de outro nível para acompanhar sua gameplay.">
+  <title>Cardápio | Reespawn Lobby</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-line" id="inicio"></div>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Reespawn Lobby - início">
+      <img class="brand-logo" src="assets/logo-icon.svg" alt="">
+      <span class="brand-name">REESPAWN <b>LOBBY</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="experiencias.html">Experiências</a><a href="cardapio.html" class="active" aria-current="page">Cardápio</a><a href="precos.html">Preços</a><a href="sobre.html">Sobre nós</a>
+      <a class="nav-cta" href="contato.html">Encontre a gente <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="food-section" id="cardapio">
+      <div class="food-visual">
+        <div class="food-stamp">CRAFTED<br><b>FOR<br>PLAYERS</b></div>
+        <img class="food-img" src="assets/food.svg" alt="Hambúrguer no prato com bônus de vida">
+        <div class="food-caption">FUEL YOUR NEXT QUEST.</div>
+      </div>
+      <div class="food-content">
+        <div class="eyebrow">RECARGA DE ENERGIA</div>
+        <h2>COMIDA DE<br><span>OUTRO NÍVEL.</span></h2>
+        <p>Do primeiro round até a última missão, tem lanche, prato e bebida pra acompanhar sua gameplay. Nosso cardápio mistura sabores que você ama com referências do universo geek.</p>
+        <div class="food-features">
+          <div><span>✦</span><section><b>Combos temáticos</b><small>Combinações pra dividir ou encarar solo.</small></section></div>
+          <div><span>✦</span><section><b>Lanches & pratos</b><small>Uma pausa gostosa entre uma partida e outra.</small></section></div>
+          <div><span>✦</span><section><b>Bebidas & sobremesas</b><small>O bônus que faltava para fechar o combo.</small></section></div>
+        </div>
+        <a class="button button-primary" href="cardapio-completo.html">CONFERIR CARDÁPIO <span>↘</span></a>
+        <p class="small-note">* Os itens e preços exibidos no site são exemplos editáveis.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-icon.svg" alt=""><span class="brand-name">REESPAWN <b>LOBBY</b></span></a>
+    <p>FEITO PARA QUEM AMA JOGAR. © <span id="year"></span> REESPAWN LOBBY.</p>
+    <a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a>
+  </footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

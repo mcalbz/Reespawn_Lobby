@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Preços de computadores, consoles e tabuleiros, pacotes, regras e como reservar na Reespawn Lobby.">
+  <title>Preços e reservas | Reespawn Lobby</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-line" id="inicio"></div>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Reespawn Lobby - início">
+      <img class="brand-logo" src="assets/logo-icon.svg" alt="">
+      <span class="brand-name">REESPAWN <b>LOBBY</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="experiencias.html">Experiências</a><a href="cardapio.html">Cardápio</a><a href="precos.html" class="active" aria-current="page">Preços</a><a href="sobre.html">Sobre nós</a>
+      <a class="nav-cta" href="contato.html">Encontre a gente <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section prices">
+      <div class="section-heading">
+        <div><div class="eyebrow">SEM PEGADINHA, SÓ DIVERSÃO</div><h2>ESCOLHA SEU<br><span>LOADOUT.</span></h2></div>
+        <p>Aluguel por hora, passes para jogar mais tempo, combos e os jogos disponíveis em cada área.</p>
+      </div>
+      <div class="price-tabs" role="tablist" aria-label="Categorias de preços">
+        <button class="price-tab active" data-category="todos" role="tab" aria-selected="true">TUDO</button>
+        <button class="price-tab" data-category="pc" role="tab" aria-selected="false">PC</button>
+        <button class="price-tab" data-category="playstation" role="tab" aria-selected="false">PLAYSTATION</button>
+        <button class="price-tab" data-category="xbox" role="tab" aria-selected="false">XBOX</button>
+        <button class="price-tab" data-category="nintendo" role="tab" aria-selected="false">NINTENDO</button>
+        <button class="price-tab" data-category="mesa" role="tab" aria-selected="false">TABULEIROS</button>
+        <button class="price-tab" data-category="pacotes" role="tab" aria-selected="false">COMBOS</button>
+      </div>
+      <div id="priceGroups" aria-live="polite"></div>
+      <p class="price-disclaimer">Nos consoles e PCs o valor é por equipamento (os amigos podem dividir); nos tabuleiros, por pessoa. Comida e bebida: veja o <a class="inline-link" href="cardapio-completo.html">cardápio completo</a>.</p>
+    </section>
+
+    <section class="section reserva" id="reserva">
+      <div class="section-heading">
+        <div><div class="eyebrow">GARANTA SEU LUGAR</div><h2>COMO FUNCIONA<br><span>A RESERVA.</span></h2></div>
+        <p>Reservar é rápido e evita fila. Siga os passos abaixo.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><b>01</b><h3>ESCOLHA</h3><p>Defina o que quer jogar: PC, console ou tabuleiro.</p></div>
+        <div class="step"><b>02</b><h3>CHAME A GENTE</h3><p>Fale pelo WhatsApp ou pelo formulário com dia, horário e quantidade de pessoas.</p></div>
+        <div class="step"><b>03</b><h3>CONFIRMAÇÃO</h3><p>Respondemos confirmando a disponibilidade do seu horário.</p></div>
+        <div class="step"><b>04</b><h3>É SÓ JOGAR</h3><p>Chegue no horário combinado e aproveite o lobby.</p></div>
+      </div>
+      <div class="rules-grid" id="rulesGrid"></div>
+      <div class="reserva-cta">
+        <p>Pronto para reservar? Fale direto com a gente.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#" data-wa="Olá! Quero fazer uma reserva na Reespawn Lobby.">RESERVAR PELO WHATSAPP <span>↗</span></a>
+          <a class="button button-ghost" href="contato.html?assunto=reserva#formulario">USAR O FORMULÁRIO</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-icon.svg" alt=""><span class="brand-name">REESPAWN <b>LOBBY</b></span></a>
+    <p>FEITO PARA QUEM AMA JOGAR. © <span id="year"></span> REESPAWN LOBBY.</p>
+    <a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a>
+  </footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
